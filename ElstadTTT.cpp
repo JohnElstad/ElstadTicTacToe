@@ -10,9 +10,20 @@ void resetboard(char(*board)[3]);
 int main(){
   char board[3][3];
   int test = 5;
+  bool playerX = true;
+  char input[3];
+  
+  cout<<"Type a capital letter and then a number to make a move."<<endl;
+  cin>>input;
+  cout<<input<<endl;
+  
   resetboard(board);
   printboard(board);
-  
+  if(input[0]=='1'||input[1]=='2'||input[2]=='3'){
+    if(input){
+      }
+  }
+ 
 }
 
 		
@@ -29,7 +40,7 @@ void resetboard(char(*board)[3]){
 
     for(int x=0;x<3;x++){
       for(int y=0;y<3;y++){
-	board[x][y]='t';
+	board[x][y]=' ';
 	
       }
     }
